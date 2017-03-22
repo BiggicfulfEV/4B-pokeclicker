@@ -19,7 +19,7 @@ margin-left:10px;
     
 }
 .box1{
-    width: 250px;
+    width: 255px;
     height: 900px;
     background-color:#007DE8 ;
     position: fixed;
@@ -48,66 +48,67 @@ height: 100%;
 }
 
 @media screen and (max-width : 980px ){
-   #.box {
-       width: 94%;
+   .box1 h2 {
+	   font-size: 1.25em;
    }
-   #.display {
-       width: 75%;
+   .box1 p button img {
+	   width: 45px;
    }
-   #.pokeball {
+   .box {
        width: 90%;
    }
+   .box1 {
+       width: 40%;
+   }   
+   .numberofclicks {
+       width: 40%;
+   }   
 }
 
 @media screen and (max-width: 700px) {
-   #.box1, #.pokemon {
-       width: auto;
-       float: none;
-}
-   #.box2 {
-       height: auto;
+   .box1 h2 {
+	   font-size: 1em;
    }
+   .box1 p button img {
+	   width: 30px;
+   }
+   .box {
+       width: 80%;
+   }
+   .box1 {
+       width: 30%;
+   }   
 }
 @media screen and (max-width: 480px)
 {    
-   #.audio
-   {    
-       height: auto;
-   }    
-   h1
-   {
-       font-size: 24px;
+  .box1 h2 {
+	   font-size: 0.75em;
    }
-   #.box
-   {
-       float: none;
+   .box1 p button img {
+	   width: 20px;
    }
+   .box {
+       width: 70%;
+   }
+   .box1 {
+       width: 20%;
+   }   
 }
 /* Phones */
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 568px)
 {
-       body  
-       {
-               font-size: 40px;
-       }
-       #.display
-       {
-           height: auto;
-       }
-       #.box1
-       {
-           width:auto;
-       }
-       #.pokemon
-       {
-           width: auto;
-           clear: both;
-       }
-       #.box2, #.display, #.box, #.box2
-       {
-           border-radius: 16px;
-           border-width: 8px;
-       }
+       .box1 h2 {
+	   font-size: 0.50em;
+   }
+   .box1 p button img {
+	   width: 10px;
+   }
+   .box {
+       width: 60%;
+   }
+   .box1 {
+       width: 10%;
+   }   
 }
