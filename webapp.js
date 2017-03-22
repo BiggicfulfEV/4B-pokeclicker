@@ -88,22 +88,30 @@ function save_cookies() {
 	d.setTime(d.getTime() + (120*24*60*60*1000));
 	var expires = "expires="+ d.toUTCString();
 	
-	document.cookie = "pokeballs=" + pokeballs + "; " + expires;
-	document.cookie = "greatballs=" + greatballs + "; " + expires;
-	document.cookie = "ultraballs=" + ultraballs + "; " + expires;
-	document.cookie = "masterballs=" + masterballs + "; " + expires;
+	document.cookie = "pokeballs=" + pokeballs.purchased + "; " + expires;
+	document.cookie = "greatballs=" + greatballs.purchased + "; " + expires;
+	document.cookie = "ultraballs=" + ultraballs.purchased + "; " + expires;
+	document.cookie = "masterballs=" + masterballs.purchased + "; " + expires;
 
 	
 	document.cookie = "bulbasaur=" + bulbasaur.purchased + ": " + bulbasaur.bonus + ": " + "; " + expires;
-	document.cookie = "charmander=" + charmander + "; " + expires;
-	document.cookie = "Squirtle=" + Squirtle + "; " + expires;
-	document.cookie = "Pikachu=" + Pikachu + "; " + expires;
-	document.cookie = "Leafeon =" + Leafeon  + "; " + expires;
-	document.cookie = "Ratatta=" + Ratatta + "; " + expires;
-	document.cookie = "Nidoran=" + Nidoran + "; " + expires;
-	document.cookie = "Drantini=" + Drantini + "; " + expires;
-	document.cookie = "MewTwo=" + MewTwo + "; " + expires;
-	document.cookie = "Arceus=" + Arceus + "; " + expires;
+	document.cookie = "charmander=" + charmander.purchased + ": " + charmander.bonus + "; " + expires;
+	document.cookie = "Squirtle=" + Squirtle.purchased + ": " + Squirtle.bonus + "; " + expires;
+	document.cookie = "Pikachu=" + Pikachu.purchased + ": " + Pikachu.bonus + "; " + expires;
+	document.cookie = "Leafeon=" + Leafeon.purchased + ": " + Leafeon.bonus + "; " + expires;
+	document.cookie = "Ratatta=" + Ratatta.purchased + ": " + Ratatta.bonus + "; " + expires;
+	document.cookie = "Nidoran=" + Nidoran.purchased + ": " + Nidoran.bonus + "; " + expires;
+	document.cookie = "Drantini=" + Drantini.purchased + ": " + Drantini.bonus + "; " + expires;
+	document.cookie = "MewTwo=" + MewTwo.purchased + ": " + MewTwo.bonus + "; " + expires;
+	document.cookie = "Arceus=" + Arceus.purchased + ": " + Arceus.bonus + "; " + expires;
+	
+	
+	document.cookie = "Ivysaur=" + Ivysaur + "; " + expires;
+	document.cookie = "Charmeleon=" + Charmeleon + "; " + expires;
+	document.cookie = "Wartortle=" + Wartortle + "; " + expires;
+	document.cookie = "Raticate=" + Raticate + "; " + expires;
+	document.cookie = "Nidorino=" + Nidorino + "; " + expires;
+	document.cookie = "Dragonair=" + Dragonair + "; " + expires;
 }
 
 function load_cookies() {
