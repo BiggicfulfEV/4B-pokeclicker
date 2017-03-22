@@ -145,34 +145,82 @@ function load_cookies() {
 				masterballs = Number(value);
 				break;
 			case "bulbasaur":
-				bulbasaur = Number(value);
+				value = value.split(":")
+				bulbasaur.purcahsed = value[0]
+				bulbasaur.bonus = value[1];
+				//bulbasaur = Number(value);
 				break;
 			case "charmander":
-				charmander = Number(value);
+				value = value.split(":")
+				charmander.purcahsed = value[0];
+				charmander.bonus = value[1];
+				//charmander = Number(value);
 				break;
 			case "Squirtle":
-				Squirtle = Number(value);
+				value = value.split(":")
+				Squirtle.purcahsed = value[0];
+				Squirtle.bonus = value[1];
+				//Squirtle = Number(value);
 				break;
 			case "Pikachu":
-				Pikachu = Number(value);
+				value = value.split(":")
+				Pikachu.purcahsed = value[0];
+				Pikachu.bonus = value[1];
+				//Pikachu = Number(value);
 				break;
 			case "Leafeon":
-				Leafeon = Number(value);
+				value = value.split(":")
+				Leafeon.purcahsed = value[0];
+				Leafeon.bonus = value[1];
+				//Leafeon = Number(value);
 				break;
 			case "Ratatta":
-				Ratatta = Number(value);
+				value = value.split(":")
+				Ratatta.purcahsed = value[0];
+				Ratatta.bonus = value[1];
+				//Ratatta = Number(value);
 				break;
 			case "Nidoran":
-				Nidoran = Number(value);
+				value = value.split(":")
+				Nidoran.purcahsed = value[0];
+				Nidoran.bonus = value[1];
+				//Nidoran = Number(value);
 				break;
 			case "Drantini":
-				Drantini = Number(value);
+				value = value.split(":")
+				Drantini.purcahsed = value[0];
+				Drantini.bonus = value[1];
+				//Drantini = Number(value);
 				break;
 			case "MewTwo":
-				MewTwo = Number(value);
+				value = value.split(":")
+				MewTwo.purcahsed = value[0];
+				MewTwo.bonus = value[1];
+				//MewTwo = Number(value);
 				break;
 			case "Arceus":
-				Arceus = Number(value);
+				value = value.split(":")
+				Arceus.purcahsed = value[0];
+				Arceus.bonus = value[1];
+				//Arceus = Number(value);
+				break;
+			case "Ivysaur":
+				Ivysaur = Number(value);
+				break;
+			case "Charmeleon":
+				Charmeleon = Number(value);
+				break;
+			case "Wartortle":
+				Wartortle = Number(value);
+				break;
+			case "Raticate":
+				Raticate = Number(value);
+				break;
+			case "Nidorino":
+				Nidorino = Number(value);
+				break;
+			case "Dragonair":
+				Dragonair = Number(value);
 				break;
 			
 
@@ -446,11 +494,11 @@ function clickspersecond() {
 
 //This function adds three to the number of poke balls you make when you click. For example when you click the pokeball you will only get 1 pokeball per click. With a single great ball though, it will bring your clicks on the pokeball to 4 per click becuase it adds 3.
 function greatballbonus () {
-	pokeballs+= greatballs*3;
+	pokeballs.purchased+= greatballs*3;
 	}
 function ultraballbonus () {
-	pokeballs+= ultraballs*100;
+	pokeballs.purchased+= ultraballs*100;
 }
 function masterballbonus () {
-	pokeballs+= masterballs*5000;
+	pokeballs.purchased+= masterballs*5000;
 }
