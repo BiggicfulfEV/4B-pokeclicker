@@ -1,13 +1,24 @@
 // JavaScript Document
 
 //These are the variables for the number of pokeballs and the pokemon.
-var pokeballs = 0;
+var pokeballs =  {
+	purchased:0
+};
     
-var greatballs = 0;
+var greatballs =  {
+     purchased:0
+	 price: 500
+};
     
-var ultraballs = 0;
+var ultraballs =  {
+     purchased:0
+	 price: 15000
+	};
    
-var masterballs = 0;
+var masterballs =  {
+     purchased:0
+	 price: 1500000
+	};
 
 var bulbasaur =  {
     price:10
@@ -66,6 +77,7 @@ var Wartortle = 0;
 var Raticate = 0;
 var Nidorino = 0;
 var Dragonair = 0; 
+
 
 window.onload=load_cookies;
 //COOKIES
@@ -166,13 +178,13 @@ function load_cookies() {
 }
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
 function update() {
-	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs)/10;
+	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs.purchased)/10;
 }
  
  
 //This function below which is the buttonclick makes it so that the pokeclicker works and is spamable.  It also hase a Math.round that makes it so it rounds the value of the pokeballs to the nearest tenth.
 function buttonClick() {
-	pokeballs++;
+	pokeballs.purchased++;
 	greatballbonus();
 	ultraballbonus();
 	masterballbonus();
@@ -277,27 +289,27 @@ function shop(pokemon) {
 				}
 			break;
 		case "Greatball":
-			if(pokeballs>=500) {
+			if(pokeballs>=greatballs.price) {
 				greatballs++;
-				pokeballs-=500;
+				pokeballs-=greatballs.price;
 			}	
 			else {
 				alert("Please collect more pokeballs.");
 			}
 			break;
 		case "Ultraball":
-			if(pokeballs>=15000) {
+			if(pokeballs>=ultraballs.price) {
 				ultraballs++;
-				pokeballs-=15000;
+				pokeballs-=ultraballs.price;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "masterballs":
-			if(pokeballs>=1500000) {
+			if(pokeballs>=masterballs.price) {
 				masterballs++;
-				pokeballs-=1500000;
+				pokeballs-=masterballs.price;
 			}
 			else {
 				alert("Please collect more pokeballs.");
